@@ -1,0 +1,60 @@
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import '../../../../../core/features/profile/presentation/provider/profile_provider.dart';
+
+class CheckInOutBody extends StatelessWidget {
+  const CheckInOutBody({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final ProfileProvider profileProvider = Provider.of<ProfileProvider>(context);
+    return Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Text(
+              "สวัสดี...",
+              style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.blueGrey),
+            )
+          ],
+        ),
+        const SizedBox(
+          height: 10,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Flexible(
+              child: Text(
+                "${profileProvider.profileData.firstnameTh??"ไม่ระบุ"} ${profileProvider.profileData.lastnameTh??"ไม่ระบุ"}",
+                style: TextStyle(
+                  fontSize: 22,
+                ),
+              ),
+            )
+          ],
+        ),
+        const SizedBox(
+          height: 10,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Text(
+              "ชื่ออุปกรณ์",
+              style: TextStyle(
+                fontSize: 17,
+                color: Colors.blueGrey,
+              ),
+            )
+          ],
+        ),
+
+      ],
+    );
+  }
+}

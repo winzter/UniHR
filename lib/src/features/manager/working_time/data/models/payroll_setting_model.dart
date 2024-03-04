@@ -1,0 +1,103 @@
+import 'dart:convert';
+import '../../domain/entities/entities.dart';
+
+List<PayrollSettingModel> payrollSettingEntityFromJson(String str) => List<PayrollSettingModel>.from(json.decode(str).map((x) => PayrollSettingModel.fromJson(x)));
+
+String payrollSettingEntityToJson(List<PayrollSettingModel> data) => json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
+
+class PayrollSettingModel extends PayrollSettingEntity{
+
+
+  PayrollSettingModel({
+    required int? idPayrollSetting,
+    required int? idCompany,
+    required int? xWorkingDailyHoliday,
+    required double? xWorkingMonthlyHoliday,
+    required double? xOt,
+    required int? xOtHoliday,
+    required int? morningShiftFee,
+    required int? afternoonShiftFee,
+    required int? nightShiftFee,
+    required int? delayTimes,
+    required dynamic decimalRounding,
+    required dynamic decimalNumber,
+    required dynamic paymentPeriod,
+    required dynamic firstCutOff,
+    required dynamic secondCutOff,
+    required dynamic firstPayDate,
+    required dynamic secondPayDate,
+    required dynamic earlyCheckIn,
+    required dynamic isLeavePayResign,
+    required dynamic firstPayslipDate,
+    required dynamic firstPayslipTime,
+    required dynamic secondPayslipDate,
+    required dynamic secondPayslipTime,
+    required dynamic firstAddition,
+    required dynamic secondAddition,
+    required dynamic firstDeduction,
+    required dynamic secondDeduction,
+    required List<dynamic>? payment,
+  });
+
+  factory PayrollSettingModel.fromJson(Map<String, dynamic> json) => PayrollSettingModel(
+    idPayrollSetting: json["idPayrollSetting"],
+    idCompany: json["idCompany"],
+    xWorkingDailyHoliday: json["xWorkingDailyHoliday"],
+    xWorkingMonthlyHoliday: json["xWorkingMonthlyHoliday"]?.toDouble(),
+    xOt: json["xOT"]?.toDouble(),
+    xOtHoliday: json["xOTHoliday"],
+    morningShiftFee: json["morningShiftFee"],
+    afternoonShiftFee: json["afternoonShiftFee"],
+    nightShiftFee: json["nightShiftFee"],
+    delayTimes: json["delayTimes"],
+    decimalRounding: json["decimalRounding"],
+    decimalNumber: json["decimalNumber"],
+    paymentPeriod: json["paymentPeriod"],
+    firstCutOff: json["firstCutOff"],
+    secondCutOff: json["secondCutOff"],
+    firstPayDate: json["firstPayDate"],
+    secondPayDate: json["secondPayDate"],
+    earlyCheckIn: json["earlyCheckIn"],
+    isLeavePayResign: json["isLeavePayResign"],
+    firstPayslipDate: json["firstPayslipDate"],
+    firstPayslipTime: json["firstPayslipTime"],
+    secondPayslipDate: json["secondPayslipDate"],
+    secondPayslipTime: json["secondPayslipTime"],
+    firstAddition: json["firstAddition"],
+    secondAddition: json["secondAddition"],
+    firstDeduction: json["firstDeduction"],
+    secondDeduction: json["secondDeduction"],
+    payment: json["payment"] == null ? [] : List<dynamic>.from(json["payment"]!.map((x) => x)),
+  );
+
+  Map<String, dynamic> toJson() => {
+    "idPayrollSetting": idPayrollSetting,
+    "idCompany": idCompany,
+    "xWorkingDailyHoliday": xWorkingDailyHoliday,
+    "xWorkingMonthlyHoliday": xWorkingMonthlyHoliday,
+    "xOT": xOt,
+    "xOTHoliday": xOtHoliday,
+    "morningShiftFee": morningShiftFee,
+    "afternoonShiftFee": afternoonShiftFee,
+    "nightShiftFee": nightShiftFee,
+    "delayTimes": delayTimes,
+    "decimalRounding": decimalRounding,
+    "decimalNumber": decimalNumber,
+    "paymentPeriod": paymentPeriod,
+    "firstCutOff": firstCutOff,
+    "secondCutOff": secondCutOff,
+    "firstPayDate": firstPayDate,
+    "secondPayDate": secondPayDate,
+    "earlyCheckIn": earlyCheckIn,
+    "isLeavePayResign": isLeavePayResign,
+    "firstPayslipDate": firstPayslipDate,
+    "firstPayslipTime": firstPayslipTime,
+    "secondPayslipDate": secondPayslipDate,
+    "secondPayslipTime": secondPayslipTime,
+    "firstAddition": firstAddition,
+    "secondAddition": secondAddition,
+    "firstDeduction": firstDeduction,
+    "secondDeduction": secondDeduction,
+    "payment": payment == null ? [] : List<dynamic>.from(payment!.map((x) => x)),
+  };
+}

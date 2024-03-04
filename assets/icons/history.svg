@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.32 34.58">
+  <g id="Layer_2-2" data-name="Layer 2">
+    <path d="m27.45,16.94V6.78l-5.96-5.78H3.58c-1.43,0-2.58,1.16-2.58,2.58v26.72c0,1.81,1.47,3.28,3.28,3.28h10.55" style="fill: none; stroke: #231f20; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    <path d="m27.16,7.82h-4.01c-1.19,0-2.16-.95-2.18-2.14l-.09-4.48" style="fill: #fff; stroke: #231f20; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    <line x1="7.61" y1="7.82" x2="16.02" y2="7.82" style="fill: #fff; stroke: #231f20; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    <line x1="7.61" y1="14.45" x2="22.33" y2="14.45" style="fill: #fff; stroke: #231f20; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    <line x1="7.61" y1="20.53" x2="14.97" y2="20.53" style="fill: #fff; stroke: #231f20; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    <line x1="31.32" y1="33.58" x2="27.89" y2="30.59" style="fill: #fff; stroke: #231f20; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px;"/>
+    <circle cx="24.5" cy="27.02" r="4.38" style="fill: none; stroke: #231f20; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.71px;"/>
+  </g>
+</svg>

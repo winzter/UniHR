@@ -1,0 +1,13 @@
+<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon-park-outline:check-correct" clip-path="url(#clip0_5_1671)">
+<g id="Group">
+<path id="Vector" d="M8.75 4.16667V8.125C8.75 8.29076 8.68415 8.44973 8.56694 8.56694C8.44973 8.68415 8.29076 8.75 8.125 8.75H1.875C1.70924 8.75 1.55027 8.68415 1.43306 8.56694C1.31585 8.44973 1.25 8.29076 1.25 8.125V1.875C1.25 1.70924 1.31585 1.55027 1.43306 1.43306C1.55027 1.31585 1.70924 1.25 1.875 1.25H6.25" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M3.33331 4.16668L5.41665 5.83334L8.54165 1.45834" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_5_1671">
+<rect width="10" height="10" fill="white"/>
+</clipPath>
+</defs>
+</svg>
